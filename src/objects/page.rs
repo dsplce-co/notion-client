@@ -35,6 +35,9 @@ pub enum Icon {
 #[derive(Serialize, Deserialize, Debug, Eq, PartialEq, Clone)]
 #[serde(tag = "type", rename_all = "snake_case")]
 pub enum PageProperty {
+    Button {
+        id: Option<String>,
+    },
     Checkbox {
         id: Option<String>,
         checkbox: bool,

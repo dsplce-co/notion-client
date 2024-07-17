@@ -89,6 +89,9 @@ pub enum Property {
         id: String,
         last_edited_by: User,
     },
+    Button {
+        id: String,
+    },
 }
 
 #[derive(Serialize, Deserialize, Debug, Eq, PartialEq, Clone)]
